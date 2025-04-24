@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+    <h2>Snake Game</h2>
+    <h3>Developed by Abishek..</h3>
+    <div id="msg">press right left top down arrow keys</div>
+    <div id="container">
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <div id="score">Score: <span id="scoreVal">0</span></div>
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="mobile-controls">
+        <button onclick="pressArrow(38)">⬆️</button><br>
+        <button onclick="pressArrow(37)">⬅️</button>
+        <button onclick="pressArrow(40)">⬇️</button>
+        <button onclick="pressArrow(39)">➡️</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
